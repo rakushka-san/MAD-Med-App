@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/primary"
+    tools:context=".Main">
+
+
+    <LinearLayout
+        android:id="@+id/header"
+        android:layout_width="321sp"
+        android:layout_height="49sp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="61sp"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:id="@+id/main_hamburger"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="14sp"
+            app:srcCompat="@drawable/main_hamburger" />
+
+        <ImageView
+            android:id="@+id/main_logo"
+            android:layout_width="46sp"
+            android:layout_height="49sp"
+            android:layout_marginLeft="117sp"
+            app:srcCompat="@drawable/main_logo" />
+
+        <de.hdodenhof.circleimageview.CircleImageView xmlns:app="http://schemas.android.com/apk/res-auto"
+            android:id="@+id/main_profile_image"
+            android:layout_width="36sp"
+            android:layout_height="36sp"
+            android:layout_marginLeft="99sp"
+            android:layout_marginTop="5sp"
+            android:src="@drawable/background" />
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/main_hello"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/header"
+        android:layout_marginHorizontal="21sp"
+        android:fontFamily="@font/alegreya_regular"
+        android:textFontWeight="500"
+        android:textSize="30sp"
+        android:textColor="@color/white"
+        android:layout_marginTop="29sp"/>
+
+    <TextView
+        android:id="@+id/main_subtitle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/main_hello"
+        android:fontFamily="@font/alegreyasans_regular"
+        android:text="@string/main_subtitle"
+        android:textColor="@color/subtitle"
+        android:layout_marginLeft="25sp"
+        android:textFontWeight="400"
+        android:textSize="22sp" />
+
+    <HorizontalScrollView
+        android:layout_width="match_parent"
+        android:layout_height="82sp"
+        android:layout_marginTop="27sp"
+        android:layout_marginLeft="25sp"
+        android:layout_below="@id/main_subtitle"
+        android:scrollbars="none">
+
+        <LinearLayout
+            android:id="@+id/ll_feelings"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:orientation="vertical" />
+    </HorizontalScrollView>
+
+
+</RelativeLayout>

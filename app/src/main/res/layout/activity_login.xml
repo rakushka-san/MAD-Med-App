@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/primary"
+    tools:context=".Login">
+
+    <ImageView
+        android:id="@+id/login_logo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:srcCompat="@drawable/login_logo" />
+
+    <TextView
+        android:id="@+id/login_title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="31sp"
+        android:layout_marginTop="181sp"
+        android:fontFamily="@font/alegreya_regular"
+        android:text="@string/login_title"
+        android:textColor="@color/white"
+        android:textFontWeight="500"
+        android:textSize="30sp" />
+
+    <EditText
+        android:id="@+id/login_form_email"
+        style="@style/forms"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/login_title"
+        android:layout_marginTop="111sp"
+        android:ems="10"
+        android:inputType="textEmailAddress"
+        android:hint="@string/login_form_email"
+        android:textColorHint="@color/forms"
+        />
+
+    <EditText
+        android:id="@+id/login_form_password"
+        style="@style/forms"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:inputType="textPassword"
+        android:layout_below="@id/login_form_email"
+        android:layout_marginTop="10sp"
+        android:hint="@string/login_form_password"
+        android:textColorHint="@color/forms"/>
+
+
+    <Button
+        android:id="@+id/login_sign_in_btn"
+        style="@style/buttons"
+        android:layout_below="@id/login_form_password"
+        android:layout_marginTop="40sp"
+        android:onClick="onClick"
+        android:text="@string/login_sign_in_btn"
+        app:cornerRadius="10sp" />
+
+    <TextView
+        android:id="@+id/login_register"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/login_sign_in_btn"
+        android:layout_marginLeft="31sp"
+        android:layout_marginTop="20sp"
+        android:fontFamily="@font/alegreyasans_regular"
+        android:text="@string/login_register"
+        android:onClick="onClick"
+        android:textColor="@color/white"
+        android:textFontWeight="400"
+        android:textSize="20sp" />
+
+    <Button
+        android:id="@+id/login_profile_btn"
+        style="@style/buttons"
+        app:cornerRadius="10sp"
+        android:text="@string/login_profile_btn"
+        android:layout_below="@id/login_register"
+        android:layout_marginTop="20sp" />
+
+    <ImageView
+        android:id="@+id/leaves"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:elevation="2dp"
+        app:srcCompat="@drawable/leaves" />
+
+</RelativeLayout>

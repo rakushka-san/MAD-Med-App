@@ -1,0 +1,22 @@
+<resources>
+    <string name="app_name">MAD Meditation App</string>
+    <string name="hello">Привет</string>
+    <string name="intro">Наслаждайся отборочными. Будь внимателен. \nДелай хорошо.</string>
+    <string name="onb_login_btn">Войти в аккаунт</string>
+    <string name="onb_register">Еще нет аккаунта? <strong>Зарегистрируйтесь</strong></string>
+    <string name="login_title">Sign in</string>
+    <string name="login_sign_in_btn">Sign in</string>
+    <string name="login_profile_btn">Профиль</string>
+    <string name="login_register">Register</string>
+    <string name="login_form_email">Email</string>
+    <string name="login_form_password">Пароль</string>
+    <string name="register_dummy">Тут будет регистрация</string>
+    <string name="menu_dummy">Тут будет меню</string>
+    <string name="listen_dummy">Тут будет прослушивание</string>
+    <string name="no_email_filled">Введите Email</string>
+    <string name="no_password_filled">Введите пароль</string>
+    <string name="no_at">Email должен содержать символ "@"</string>
+    <string name="response_unsuccess">Не удалось авторизоваться. Код ошибки: </string>
+    <string name="no_response">Ошибка авторизации: </string>
+    <string name="main_subtitle">Каким ты себя ощущаешь сегодня?</string>
+</resources>
